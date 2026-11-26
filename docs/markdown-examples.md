@@ -2,7 +2,7 @@
 
 
 
-> 如果你还不了解 Markdown ，请先了解下Markdown的简单用法
+> 如果你还不了解 `Markdown` ，请先了解下 `Markdown` 的简单用法
 >
 > VitePress 中的链接可以直接渲染
 

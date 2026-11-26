@@ -27,7 +27,7 @@ export default defineConfig({
         return htmlResult
       },
 
-      md.use(groupIconMdPlugin) //代码组图标
+        md.use(groupIconMdPlugin) //代码组图标
     },
 
     codeCopyButton: {
@@ -40,7 +40,7 @@ export default defineConfig({
 
     // toc显示一级标题
     toc: { level: [1, 2, 3] },
-    
+
     // 使用 `!!code` 防止转换
     codeTransformers: [
       {
@@ -56,7 +56,7 @@ export default defineConfig({
 
   vite: {
     plugins: [
-      groupIconVitePlugin({ 
+      groupIconVitePlugin({
         customIcon: {
           ts: localIconLoader(import.meta.url, '../public/svg/typescript.svg'), //本地ts图标导入
           js: 'logos:javascript', //js图标
@@ -76,10 +76,18 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '🍉指南', 
+      {
+        // 分组标题1
+        text: '介绍',
+        items: [
+          { text: '前言', link: '/preface' },
+        ],
+      },
+      {
+        text: '🍉指南',
         items: [
           {
-            // 分组标题1
+            // 分组标题2
             text: '进阶玩法',
             items: [
               { text: 'Markdown', link: '/markdown-examples' },
@@ -101,6 +109,14 @@ export default defineConfig({
     sidebar: [
       {
         //分组标题1
+        text: '介绍',
+        collapsed: false,
+        items: [
+          { text: '前言', link: '/preface' },
+        ],
+      },
+      {
+        //分组标题2
         text: '进阶玩法',
         collapsed: false,
         items: [
