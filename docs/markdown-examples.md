@@ -733,3 +733,39 @@ yarn -v
 :::
 
 
+### 代码块带标题
+
+**输入**
+
+````md
+```c [HelloWorld.c]
+#include <stdio.h>
+
+int main(){
+
+  printf("Hello World !!!");
+
+  return 0;
+}
+
+```
+````
+
+**输出**
+
+```c [HelloWorld.c]
+#include <stdio.h>
+
+int main(){
+
+  printf("Hello World !!!");
+
+  return 0;
+}
+```
+
+::: danger 如何做到的呢
+请参考 [样式美化-代码块带标题](./style.md#代码块带标题) 教程
+:::
+
+

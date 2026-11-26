@@ -4,6 +4,7 @@
 @import './sidebarIcon.css'; /* 侧边栏样式美化 */
 @import './vp-code.css'; /* 代码块样式美化 */
 @import './vp-code-group.css'; /* 代码块组样式美化 */
-@import './rainbow.css';
+@import './vp-code-title.css'; /* 代码块带标题 */
+@import './rainbow.css'; /* 彩虹背景动画 */
 
 
