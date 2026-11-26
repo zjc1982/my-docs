@@ -1,0 +1,24 @@
+/* var.css */
+
+/* 超链接下划线 */
+.vp-doc a {
+  text-decoration: none;
+}
+
+/* 文档h1标题样式 */
+.VPDoc h1 {
+  background: -webkit-linear-gradient(10deg, #bd34fe 5%, #e43498 15%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* VPFeatures 页卡悬浮效果 */
+.VPFeatures .items .item {
+  transition: transform 0.3s;
+}
+
+.VPFeatures .items .item:hover {
+  transform: translateY(-5px);
+}
+
