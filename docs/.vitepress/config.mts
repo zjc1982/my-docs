@@ -77,17 +77,24 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        // 分组标题1
-        text: '介绍',
-        items: [
-          { text: '前言', link: '/preface' },
-        ],
-      },
-      {
         text: '🍉指南',
         items: [
           {
+            // 分组标题1
+            text: '介绍',
+            items: [
+              { text: '前言', link: '/preface' },
+            ],
+          },
+          {
             // 分组标题2
+            text: '基础配置',
+            items: [
+              { text: '快速上手', link: '/getting-started' },
+            ],
+          },
+          {
+            // 分组标题3
             text: '进阶玩法',
             items: [
               { text: 'Markdown', link: '/markdown-examples' },
@@ -116,7 +123,15 @@ export default defineConfig({
         ],
       },
       {
-        //分组标题2
+        // 分组标题2
+        text: '基础配置',
+        collapsed: false,
+        items: [
+          { text: '快速上手', link: '/getting-started' },
+        ],
+      },
+      {
+        //分组标题3
         text: '进阶玩法',
         collapsed: false,
         items: [
